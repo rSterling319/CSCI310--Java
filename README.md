@@ -5,4 +5,4 @@ Richard Sterling<br>
 <br>
 
 ### Assignments
-1) [Homework 1: ](https://github.com/rSterling319/CSCI310--Java/tree/master/hw1) [source](https://github.com/rSterling319/CSCI310--Java/blob/master/hw1/src/hw1/Hw1.java) [tests](https://github.com/rSterling319/CSCI310--Java/blob/master/hw1/test/hw1/Hw1Test.java)
+1) [Homework 1: ](https://github.com/rSterling319/CSCI310--Java/tree/master/hw1) [source](https://github.com/rSterling319/CSCI310--Java/blob/master/hw1/src/hw1/Hw1.java),  [tests](https://github.com/rSterling319/CSCI310--Java/blob/master/hw1/test/hw1/Hw1Test.java)
