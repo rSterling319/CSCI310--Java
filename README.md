@@ -6,3 +6,6 @@ Richard Sterling<br>
 
 ### Assignments
 1) [Homework 1: ](https://github.com/rSterling319/CSCI310--Java/tree/hw1) ([source](https://github.com/rSterling319/CSCI310--Java/blob/hw1/hw1/src/hw1/Hw1.java)),  ([tests](https://github.com/rSterling319/CSCI310--Java/blob/hw1/hw1/test/hw1/Hw1Test.java))
+
+
+ssh Test
