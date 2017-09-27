@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Richard Sterling
+ * CSCI 310--Java
+ * HW2 Kattis problem https://open.kattis.com/problems/quadrant
  */
 package hw2;
 
