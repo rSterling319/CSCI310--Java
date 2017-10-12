@@ -59,10 +59,11 @@ public class EggTest {
     public void testCompareTo() {
         // instance < to
         System.out.println("compareTo");
-        EasterEgg to = new Egg("Red", "Money");
-        Egg instance = new Egg("Blue","Skittles");
-        int expResult = -1;
+        Egg to = new Egg("Red", "Money"); // 0 + 3
+        Egg instance = new Egg("Purple","Skittles"); // 4 +1
+        int expResult = 1;
         int result = instance.compareTo(to);
+//        instance > to
         assertEquals(expResult, result);
         
         
@@ -74,6 +75,21 @@ public class EggTest {
         assertEquals(expResult2, result2);
         
         
+    }
+
+    /**
+     * Test of equals method, of class Egg.
+     */
+    @Test
+    public void testEquals() {
+        System.out.println("equals");
+        Object o = null;
+        Egg instance = new Egg();
+        boolean expResult = false;
+        boolean result = instance.equals(o);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
     
 }

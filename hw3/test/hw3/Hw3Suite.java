@@ -17,7 +17,7 @@ import org.junit.runners.Suite;
  * @author rs
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({HunterTest.class, EggTest.class, Hw3Test.class})
+@Suite.SuiteClasses({ColorTest.class, EasterEggTest.class, PrizeTest.class, EggTest.class, HunterTest.class, Hw3Test.class})
 public class Hw3Suite {
 
     @BeforeClass
