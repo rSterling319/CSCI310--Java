@@ -85,7 +85,7 @@ public class Grades {
     
     void setFinalGrade(){
         if(!finalCache){
-            finalGrade = ((getTestAvg() * .6) + (getQuizAvg() * .4)) * 100;
+            finalGrade = ((getTestAvg() * .6) + (getQuizAvg() * .4));
             finalCache = true;
         }
     }

@@ -15,6 +15,10 @@ public class Student {
     private String lName;
     private Long id;
     
+    Student(){
+        fName = "New";
+        lName = "Student";
+    }
     Student(String _fName, String _lName, Long _id){
         fName = _fName;
         lName = _lName;
@@ -31,7 +35,7 @@ public class Student {
     }
     
     public void set_lName(String _lName){
-        lName = lName;
+        lName = _lName;
     }
     
     public void set_id(Long _id){

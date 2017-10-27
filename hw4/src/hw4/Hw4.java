@@ -32,22 +32,35 @@ public class Hw4 {
         history.set_title("History");
         history.set_id(db.insertClass(history));
         
-        Grades grades = new Grades();
-        grades.addQuiz(90.2);
-        grades.addQuiz(87.5);
-        grades.addQuiz(94.2);
-        grades.addQuiz(84.7);
-        grades.addTest(95.3);
-        grades.addTest(90.4);
+        Class art =new Class();
+        art.set_title("Art");
+        art.set_id(db.insertClass(art));
         
-        db.insertGrades(bob, grades, history);
+        Grades gradesHist = new Grades();
+        gradesHist.addQuiz(90.2);
+        gradesHist.addQuiz(87.5);
+        gradesHist.addQuiz(94.2);
+        gradesHist.addQuiz(84.7);
+        gradesHist.addTest(95.3);
+        gradesHist.addTest(90.4);
+        db.insertGrades(bob, gradesHist, history);
+        
+        Grades gradesArt = new Grades();
+        gradesArt.addQuiz(67.8);
+        gradesArt.addQuiz(72.9);
+        gradesArt.addQuiz(23.8);
+        gradesArt.addQuiz(80.7);
+        gradesArt.addTest(69.8);
+        gradesArt.addTest(72.1);
+        db.insertGrades(bob, gradesArt, art);
         
         System.out.println(db.getStudent(bob.getId()));
         System.out.println(bob.getId());
         System.out.println(db.getStudentInfoByLast("Dole"));
         System.out.println(db.getClass(history.getId()));
         System.out.println(history.getId());
-        System.out.println(db.getGrade(bob, history));
+        System.out.println("History Grade = " + db.getGrade(bob, history));
+        System.out.println("Art Grade = " + db.getGrade(bob, art));
     }
 
 }
