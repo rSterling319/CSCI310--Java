@@ -14,7 +14,7 @@ public class Class {
     String title;
     Long id;
     
-    public void set_name(String _title){
+    public void set_title(String _title){
         title = _title;
     }
     

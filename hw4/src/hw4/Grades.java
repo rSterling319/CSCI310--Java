@@ -14,16 +14,16 @@ import java.util.ArrayList;
 public class Grades {
     ArrayList< Double > quizes;
     ArrayList< Double > tests;
-    Double quizAvg;
-    boolean quizCache = false;
+    private Double quizAvg;
+    private boolean quizCache = false;
     private final int maxQuizNum= 4;
-    Double testAvg;
-    boolean testCache = false;
+    private Double testAvg;
+    private boolean testCache = false;
     private final int maxTestNum = 2;
-    Double finalGrade;
-    boolean finalCache = false;
-    char letGrade;
-    boolean letCache = false;
+    private Double finalGrade;
+    private boolean finalCache = false;
+    private String letGrade;
+    private boolean letCache = false;
     
     Grades (){
         quizes = new ArrayList<Double>();
@@ -34,6 +34,8 @@ public class Grades {
         if(quizes.size()< maxQuizNum){
             quizes.add(quiz);
             quizCache = false;
+            finalCache = false;
+            letCache = false;
         }
         else{
             throw new IndexOutOfBoundsException("Cannot add more than "+ maxQuizNum +" quizes;");
@@ -43,6 +45,8 @@ public class Grades {
         if(tests.size()<maxTestNum){
             tests.add(test);
             testCache = false;
+            finalCache = false;
+            letCache = false;
         }
         else{
             throw new IndexOutOfBoundsException("Cannot add more than "+ maxTestNum +" Tests;");
@@ -68,7 +72,7 @@ public class Grades {
     void setTestAvg(){
         if(!testCache){
             testAvg = tests.stream().mapToDouble(Double::doubleValue).sum()/tests.size();
-            quizCache=true;
+            testCache=true;
         }
     }
     
@@ -81,7 +85,8 @@ public class Grades {
     
     void setFinalGrade(){
         if(!finalCache){
-            finalGrade = getTestAvg() * .6 + getQuizAvg() * .4 * 100;
+            finalGrade = ((getTestAvg() * .6) + (getQuizAvg() * .4)) * 100;
+            finalCache = true;
         }
     }
     
@@ -95,17 +100,19 @@ public class Grades {
     void setLetGrade(){
         if(!letCache){
             setFinalGrade();
-            if(finalGrade >= 90) letGrade = 'A';
-            else if (finalGrade >=80 && finalGrade <90) letGrade = 'B';
-            else if (finalGrade >=70 && finalGrade <80) letGrade = 'C';
-            else if (finalGrade >= 60 && finalGrade <70) letGrade = 'D';
-            else letGrade = 'F';
+            if(finalGrade >= 90) letGrade = "A";
+            else if (finalGrade >=80 && finalGrade <90) letGrade = "B";
+            else if (finalGrade >=70 && finalGrade <80) letGrade = "C";
+            else if (finalGrade >= 60 && finalGrade <70) letGrade = "D";
+            else letGrade = "F";
+            letCache=true;
             }
      }
     
-    char getLetGrade(){
+    String getLetGrade(){
         if(!letCache){
             setLetGrade();
+            letCache=true;
         }
         return letGrade;
     }
