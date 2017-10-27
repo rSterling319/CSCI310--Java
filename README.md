@@ -14,3 +14,8 @@ Richard Sterling<br>
 3) [Homework 3: ](https://github.com/rSterling319/CSCI310--Java/tree/hw3/hw3)
 ([source](https://github.com/rSterling319/CSCI310--Java/tree/hw3/hw3/src/hw3)),
 ([tests](https://github.com/rSterling319/CSCI310--Java/tree/hw3/hw3/test/hw3))
+
+##### Homework 4
+4) [Homeowrk 4: ](https://github.com/rSterling319/CSCI310--Java/tree/hw4)
+([source files](https://github.com/rSterling319/CSCI310--Java/tree/hw4/hw4/src/hw4)),
+([test files](https://github.com/rSterling319/CSCI310--Java/tree/hw4/hw4/test/hw4))
