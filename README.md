@@ -22,4 +22,4 @@ Richard Sterling<br>
 
 ##### Homework 5
 5) [Homework 5:](https://github.com/rSterling319/CSCI310--Java/tree/hw5/)
-([source files] https://github.com/rSterling319/CSCI310--Java/tree/hw5/hw5)
+([source files](https://github.com/rSterling319/CSCI310--Java/tree/hw5/hw5))
