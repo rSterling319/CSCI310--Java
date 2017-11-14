@@ -23,3 +23,7 @@ Richard Sterling<br>
 ##### Homework 5
 5) [Homework 5:](https://github.com/rSterling319/CSCI310--Java/tree/hw5/)
 ([source files](https://github.com/rSterling319/CSCI310--Java/tree/hw5/hw5))
+
+##### Homework 6
+6) [Homework 6:](https://github.com/rSterling319/CSCI310--Java/tree/hw6/hw6)
+([emulator screen shot](https://github.com/rSterling319/CSCI310--Java/blob/hw6/hw6/emGrab.png))
