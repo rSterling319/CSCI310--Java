@@ -26,8 +26,7 @@ Richard Sterling<br>
 
 ##### Homework 6
 6) [Homework 6:](https://github.com/rSterling319/CSCI310--Java/tree/hw6/hw6)</br>
-![emulator screen shot](https://github.com/rSterling319/CSCI310--Java/blob/hw6/hw6/emGrab.png)
-<img src="https://github.com/rSterling319/CSCI310--Java/blob/hw6/hw6/emGrab.png" width="48">
+<img src="https://github.com/rSterling319/CSCI310--Java/blob/hw6/hw6/emGrab.png" width="200">
 
 
 ##### Final Project
