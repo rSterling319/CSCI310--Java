@@ -30,5 +30,5 @@ Richard Sterling<br>
 
 
 ##### Final Project
-[Final Project Repository] (https://github.com/rSterling319/Project_Priority)
+[Final Project Repository](https://github.com/rSterling319/Project_Priority)</br>
 (note: this project is in a separate repository)
